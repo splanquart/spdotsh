@@ -1,9 +1,10 @@
 syntax on
 filetype plugin indent on
 call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ryanoasis/vim-devicons'
 
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -63,7 +64,6 @@ let g:xml_syntax_folding=1
 map <leader>sf :setlocal spell spelllang=fr<CR>
 map <leader>se :setlocal spell spelllang=en_US<CR>
 
-ab GPL_LICENSE #################################################################################<enter># copyright 2008 Gabriel Pettier <gabriel.pettier@gmail.com><enter>#<enter># This file is part of PROJECT<enter>#<enter># PROJECT is free software: you can redistribute it and/or modify<enter># it under the terms of the GNU General Public License as published by<enter># the Free Software Foundation, either version 3 of the License, or<enter># (at your option) any later version.<enter>#<enter># PROJECT is distributed in the hope that it will be useful,<enter># but WITHOUT ANY WARRANTY; without even the implied warranty of<enter># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the<enter># GNU General Public License for more details.<enter>#<enter># You should have received a copy of the GNU General Public License<enter># along with PROJECT.  If not, see <http://www.gnu.org/licenses/>.<enter>##############################################################################<enter>
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
