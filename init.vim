@@ -12,6 +12,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+" make backspace work like most other apps
+set backspace=2
+
+let g:rehash256 = 1
+
+
 " close vim if the only tab open is nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -27,6 +33,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Clean"     : "✔︎",
     \ "Unknown"   : "?"
     \ }
+" hide some file in NERDTree
+let NERDTreeIgnore = ['\.pyc$']
+
 
 set tabstop=4 " show existing tab with 4 spaces width
 set shiftwidth=4 " when indenting with '>', use 4 spaces width
