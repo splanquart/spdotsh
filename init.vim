@@ -5,6 +5,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'altercation/vim-colors-solarized'
 
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
@@ -12,10 +13,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
+let g:solarized_termcolors=256
+colorscheme solarized
 " make backspace work like most other apps
 set backspace=2
 
-let g:rehash256 = 1
 
 
 " close vim if the only tab open is nerdtree
@@ -52,8 +54,6 @@ set fileencoding&	" auto-sensed charset of current buffer
 
 set ruler
 set wildmenu
-set bg=dark
-set bg=light
 set syntax=auto
 set nu
 set ai
