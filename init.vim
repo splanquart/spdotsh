@@ -13,8 +13,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
-let g:solarized_termcolors=256
+let g:solarized_termcolors = 256
+let g:solarized_visibility = "low"
+"set background=light
+set background=dark
 colorscheme solarized
+
 " make backspace work like most other apps
 set backspace=2
 
