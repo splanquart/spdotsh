@@ -20,3 +20,6 @@ ln -s ${SCRIPTPATH}/init.vim ~/.vimrc
 # run command :PlugInstall inside vim for update plugins list
 vim +PlugInstall +qall
 
+# install global gitingore
+git config --global core.excludesfile ${SCRIPTPATH}/gitignore_global
+

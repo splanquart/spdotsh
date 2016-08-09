@@ -109,3 +109,6 @@ autocmd BufNewFile *.tex 0r ~/.vim/skeleton.tex
 "hi Password ctermfg=black ctermbg=black cterm=NONE guifg=black guibg=black 
 "match Password /pass.*\s*=\s*\k\{-}\zs[^ ]*\ze.\{-}/
 
+" swap file location
+set directory^=$HOME/.vim/tmp//
+
