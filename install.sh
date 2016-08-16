@@ -23,3 +23,6 @@ vim +PlugInstall +qall
 # install global gitingore
 git config --global core.excludesfile ${SCRIPTPATH}/gitignore_global
 
+# install pep8 global configuration
+ln -sf ${SCRIPTPATH}/pep8 ~/.pep8
+
