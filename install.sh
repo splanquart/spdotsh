@@ -26,3 +26,6 @@ git config --global core.excludesfile ${SCRIPTPATH}/gitignore_global
 # install pep8 global configuration
 ln -sf ${SCRIPTPATH}/pep8 ~/.pep8
 
+# install zshrc
+ln -sf ${SCRIPTPATH}/zshrc ~/.zshrc
+
