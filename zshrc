@@ -52,7 +52,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin"
+# export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin"
+export PATH="/opt/local/bin:/opt/local/sbin:/usr/local/mysql/bin:/opt/local/bin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin:/usr/texbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -82,6 +83,7 @@ export PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:/opt/local/bi
 alias ccat='pygmentize -g'
 alias cdsalt='cd ~/Documents/PycharmProjects/payplug_salt'
 alias delete_merged_branches=gbda
+alias wo='workon'
 
 #  # pip should only run if there is a virtualenv currently activated
 #  export PIP_REQUIRE_VIRTUALENV=true
@@ -99,10 +101,12 @@ $(boot2docker shellinit 2> /dev/null)  # use by docker
 export PYENV_ROOT=/usr/local/var/pyenv
 
 export PATH="$PATH:/Library/PostgreSQL/9.4/bin/"
+export PATH="/usr/local/bin:$PATH"
 # virtualenv wrapper
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python
+# export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
 export WORKON_HOME=~/Envs
 export PROJECT_HOME=~/Documents/PycharmProjects
 source /usr/local/bin/virtualenvwrapper.sh
-export PATH="/usr/local/bin:$PATH"
 export HOMEBREW_GITHUB_API_TOKEN="90b8e47d04297b2c3ada13c6b7f0c0ce191d9228"
 
