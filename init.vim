@@ -27,7 +27,8 @@ colorscheme solarized
 " make backspace work like most other apps
 set backspace=2
 
-
+" make autoreload in docker work goode
+set backupcopy=yes
 
 " close vim if the only tab open is nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
